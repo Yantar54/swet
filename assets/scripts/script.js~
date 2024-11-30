@@ -1,0 +1,37 @@
+const button = document.querySelector('#car-1')
+const swet = document.querySelector('.swet')
+const car = document.querySelector('.car')
+
+button.addEventListener('click', () => {
+    car.classList.toggle('drive')
+
+});
+
+setInterval(() => {
+    
+console.log(car.classList.contains('drive'))
+
+}, 5000)
+
+// if(car.classList.toggle)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

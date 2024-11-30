@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+button{
+    display: block;
+
+}
+
+.gai{
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    z-index: 9999;
+    display: none;
+}
+
+.swet{
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    transition: 0;
+    animation: blink 2s infinite;
+    
+    border: 2px solid black;
+    
+    background-color: green;
+    
+    &.green{
+	background-color: green;
+    }
+    &.yellow{
+	background-color: yellow;
+    }
+    &.red{
+	background-color: red;
+    }
+}
+
+.car{
+    background-color: red;
+
+    width: 120px;
+    height: 60px;
+
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    &.drive{
+	animation: drive 1.5s linear infinite;
+    }
+    
+
+}
+
+@keyframes drive {
+    0%{
+	left: 0;
+
+    }
+    50%{
+	left: 800px;
+    }
+    100%{
+	left: 0;
+    }
+
+
+}
+
+@keyframes blink {
+    0%{
+	background-color: yellow;
+    }
+    50%{
+	background-color: gray;
+    }
+    100%{
+	background-color: yellow;
+    }
+
+}
